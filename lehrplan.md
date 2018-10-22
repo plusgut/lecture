@@ -6,15 +6,6 @@ Prioritäten (unsortiert und bisher unklar):
   * um selbstständig arbeitsfähig zu sein
   * um selbstständig fehler zu finden
   * um selbstständig software zu designen
-* Sollen die Studenten ein abschließendes Projekt umsetzen?
-* Auf den neuesten technologischen Stand kennenzulernen
-  * und Ausblick auf kommende Sachen
-* Sollen Studenten das Ökosystem kennenlernen?
-  * libraries
-  * frameworks
-  * buildtools
-  * testtools
-* Sollen Studenten am Ende einen Prüfung ablegen?
 
 ## First day 5h
 Anreißen dieser Themen:
