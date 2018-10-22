@@ -1,3 +1,3 @@
 function addition(a, b) {
-  a + c;
+  a + b;
 }
