@@ -1,0 +1,14 @@
+{
+  "name": "lecture",
+  "version": "1.0.0",
+  "description": "lecture for sae - advanced js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlo Jeske",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^3.2.0"
+  }
+}
