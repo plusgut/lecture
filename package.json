@@ -4,9 +4,19 @@
   "description": "lecture for sae - advanced js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "Carlo Jeske",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.4",
+    "jasmine": "^3.3.0",
+    "jasmine-webpack-plugin": "^0.1.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "webpack": "^4.23.1"
+  }
 }
