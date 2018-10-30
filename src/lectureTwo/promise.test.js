@@ -2,42 +2,50 @@ import { getProducts, getProductsSilent } from './promise';
 
 describe('lectureTwo', () => {
   xdescribe('getProductsSilent', () => {
-    it('getProducts', async () => {
-      const products = await getProducts('validRequest');
+    it('wellformed', async () => {
+      const products = await getProductsSilent('validRequest');
 
       expect(products).toEqual(["firstProduct", "secondProduct", "thirdProduct"]);
     });
 
-    it('getProducts with malformed json response', async () => {
-      const products = await getProducts('invalidResponse');
+    it('getProductsSilent with malformed json response', async () => {
+      const products = await getProductsSilent('invalidResponse');
 
       expect(products).toEqual([]);
     });
 
-    it('getProducts with malformed json request', async () => {
-      const products = await getProducts('invalidRequest');
+    it('getProductsSilent with malformed json request', async () => {
+      const products = await getProductsSilent('invalidRequest');
 
       expect(products).toEqual([]);
     });
   });
 
   xdescribe('getProducts', () => {
-    it('getProducts', async () => {
+    it('wellformed', async () => {
       const products = await getProducts('validRequest');
 
       expect(products).toEqual(["firstProduct", "secondProduct", "thirdProduct"]);
     });
 
     it('getProducts with malformed json response', async () => {
-      expect(async () => {
+      let expectedError;
+      try {
         await getProducts('invalidResponse');
-      }).toThrow(new Error('Invalid Response'));
+      } catch(error) {
+        expectedError = error;
+      }
+      expect(expectedError).toEqual(new Error('Invalid'));
     });
 
     it('getProducts with malformed request', async () => {
-      expect(async () => {
-        const products = await getProducts('invalidRequest');
-      }).toThrow(new Error('Invalid Request'));
+      let expectedError;
+      try {
+        await getProducts('invalidRequest');
+      } catch(error) {
+        expectedError = error;
+      }
+      expect(expectedError).toEqual(new Error('Invalid'));
     });
   });
 });

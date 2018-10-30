@@ -1,7 +1,7 @@
-export function getProducts() {
-  console.log('get!');
+export function getProducts(requestName) {
+
 }
 
-export function getProductsSilent() {
-  console.log('get!');
+export function getProductsSilent(requestName) {
+
 }

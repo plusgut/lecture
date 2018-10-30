@@ -1768,20 +1768,15 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
-jasmine-core@^2.3.4:
-  version "2.99.1"
-  resolved "http://registry.npmjs.org/jasmine-core/-/jasmine-core-2.99.1.tgz#e6400df1e6b56e130b61c4bcd093daa7f6e8ca15"
-
-jasmine-core@~3.3.0:
+jasmine-core@^3.3.0, jasmine-core@~3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.3.0.tgz#dea1cdc634bc93c7e0d4ad27185df30fa971b10e"
 
-jasmine-webpack-plugin@^0.1.1:
+"jasmine-webpack-plugin@git+ssh://git@github.com:plusgut/jasmine-webpack-plugin.git":
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/jasmine-webpack-plugin/-/jasmine-webpack-plugin-0.1.1.tgz#51d878309ec24ad2dee36e7314f6e0e1e221d590"
+  resolved "git+ssh://git@github.com:plusgut/jasmine-webpack-plugin.git#88152cd0bfe29c617c7feb4a6d840e354086e3e8"
   dependencies:
     html-webpack-plugin "^1.6.2"
-    jasmine-core "^2.3.4"
 
 jasmine@^3.3.0:
   version "3.3.0"
