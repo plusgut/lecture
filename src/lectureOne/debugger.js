@@ -6,11 +6,11 @@ function castNumber(value) {
   return result;
 }
 
-function addition(a, b) {
+export function addition(a, b) {
   return castNumber(a) + castNumber(b);
 }
 
-function additionCurry(a) {
+export function additionCurry(a) {
   const parsedA = castNumber(a);
   return (b) => addition(parsedA, b)
 }

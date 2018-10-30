@@ -1,11 +1,43 @@
-import { get } from './promise';
+import { getProducts, getProductsSilent } from './promise';
 
-get();
-describe("lectureTwo", () => {
-  xit('multiply results in correct value', () => {
-    const double = new Multiply(2);
-    const add = double.add;
+describe('lectureTwo', () => {
+  xdescribe('getProductsSilent', () => {
+    it('getProducts', async () => {
+      const products = await getProducts('validRequest');
 
-    expect(add(4)).toBe(8)
+      expect(products).toEqual(["firstProduct", "secondProduct", "thirdProduct"]);
+    });
+
+    it('getProducts with malformed json response', async () => {
+      const products = await getProducts('invalidResponse');
+
+      expect(products).toEqual([]);
+    });
+
+    it('getProducts with malformed json request', async () => {
+      const products = await getProducts('invalidRequest');
+
+      expect(products).toEqual([]);
+    });
+  });
+
+  xdescribe('getProducts', () => {
+    it('getProducts', async () => {
+      const products = await getProducts('validRequest');
+
+      expect(products).toEqual(["firstProduct", "secondProduct", "thirdProduct"]);
+    });
+
+    it('getProducts with malformed json response', async () => {
+      expect(async () => {
+        await getProducts('invalidResponse');
+      }).toThrow(new Error('Invalid Response'));
+    });
+
+    it('getProducts with malformed request', async () => {
+      expect(async () => {
+        const products = await getProducts('invalidRequest');
+      }).toThrow(new Error('Invalid Request'));
+    });
   });
 });
