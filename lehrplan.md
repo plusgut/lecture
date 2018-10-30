@@ -15,6 +15,7 @@ Anreißen dieser Themen:
 * exceptions
 
 ## Second day 5h
+* react
 * module system
 * promises
 
@@ -32,3 +33,7 @@ Anreißen dieser Themen:
 
 ### ort: 
 * c3
+
+## Nachreichung von Fragen
+
+* recording of firefox https://developer.mozilla.org/en-US/docs/Mozilla/Projects/WebReplay 

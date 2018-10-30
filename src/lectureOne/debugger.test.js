@@ -1,5 +1,5 @@
 describe("lectureOne", () => {
-  it('addition results in correct value', () => {
+  xit('addition results in correct value', () => {
     const result = addition('0' , '1');
     expect(result).toBe(1);
 
@@ -10,10 +10,14 @@ describe("lectureOne", () => {
   xit('multiplication with not-number', () => {
     expect(() => {
       addition('foo');
-    }).toThrowException(new Error('Invalid parameter'))
+    }).toThrow(new Error('Invalid parameter'))
   });
 
-  xit('when addition is called with just one parameter, then we can call the result', () => {
+  it('when addition is called with just one parameter, then we can call the result', () => {
+    const addTwo = addition(2);
+    console.log(addTwo(4))// 6
+    addTwo(5) // 7
+    
     expect(addition('1')('4')).toBe(5);
   })
 });
