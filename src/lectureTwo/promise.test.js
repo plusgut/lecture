@@ -1,6 +1,6 @@
 import { getProducts, getProductsSilent } from './promise';
 
-describe('lectureTwo', () => {
+xdescribe('lectureTwo', () => {
   describe('getProductsSilent', () => {
     it('wellformed', async () => {
       const products = await getProductsSilent('validRequest');

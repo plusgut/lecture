@@ -20,7 +20,7 @@ Anreißen dieser Themen:
 * promises
 
 ## Third day 2,5h
-* vertiefung der vorherigen Themen
+* vertiefung der vorherigen Themen anhand von arrays
 
 
 ## breaks
