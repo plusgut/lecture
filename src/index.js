@@ -1,4 +1,0 @@
-import './lectureOne/debugger.test';
-import './lectureOne/scope.test';
-import './lectureTwo/promise.test';
-import './lectureThree/math.test';

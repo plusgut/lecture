@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>lesson 1</title>
+  </head>
+  <body>
+    <script>
+      function one() {
+        debugger;
+        two();
+        three();
+      }
+
+      function two() {
+        console.log('this is function two');
+      }
+
+      function three() {
+        console.log('this is function three');
+
+        const a = 0.2 + 0.1;
+
+        four(a);
+      }
+
+      function four(a) {
+        const b = 0.3;
+
+        if(a === b) {
+          console.log('its equal')
+        } else {
+          console.log('this is unequal');
+        }
+      }
+
+      one();
+    </script>
+  </body>
+</html>
+

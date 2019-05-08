@@ -1,3 +1,13 @@
+class Multiply {
+  constructor(firstValue) {
+    this.firstValue = firstValue;
+  }
+
+  add(secondValue) {
+    return this.firstValue * secondValue;
+  }
+}
+
 describe("lectureOne", () => {
   xit('multiply results in correct value', () => {
     const double = new Multiply(2);
