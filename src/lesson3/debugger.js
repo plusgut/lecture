@@ -3,7 +3,7 @@ function addition(a, b) {
 }
 
 describe("lectureOne", () => {
-  it('addition results in correct value', () => {
+  fit('addition results in correct value', () => {
     const result = addition('0' , '1');
     expect(result).toBe(1);
 

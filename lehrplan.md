@@ -16,6 +16,7 @@
 
 ## Second day 5h
 * arrays
+* frameworks
 
 ## Third day 2,5h
 * Festigung der bisher gelehrten Sachen
