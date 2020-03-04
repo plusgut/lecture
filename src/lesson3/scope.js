@@ -8,11 +8,9 @@ class Multiply {
   }
 }
 
-describe("lectureOne", () => {
-  xit('multiply results in correct value', () => {
-    const double = new Multiply(2);
-    const add = double.add;
+const double = new Multiply(2);
+const add = double.add;
 
-    expect(add(4)).toBe(8)
-  });
-});
+if (double.add(4) !== add(4)) {
+  throw new Error('The values are not right')
+}
